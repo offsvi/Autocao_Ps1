@@ -2,7 +2,7 @@
 $isAdmin = [bool](([System.Security.Principal.WindowsIdentity]::GetCurrent()).groups -match "S-1-5-32-544")
 
 # Se não estiver sendo executado como administrador, solicita privilégios de administrador e reinicia o script
-if (-not $isAdmin) {
+if (-not $isAdmin) { 
     Start-Process powershell.exe -ArgumentList "Start-Process PowerShell -Verb RunAs -ArgumentList '-File $($MyInvocation.MyCommand.Path)'" -Verb RunAs
     exit
 }
