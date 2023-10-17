@@ -5,7 +5,7 @@ $isAdmin = [bool](([System.Security.Principal.WindowsIdentity]::GetCurrent()).gr
 if (-not $isAdmin) {
     Start-Process powershell.exe -ArgumentList "Start-Process PowerShell -Verb RunAs -ArgumentList '-File $($MyInvocation.MyCommand.Path)'" -Verb RunAs
     exit
-}
+} 
 
 # Desativa a privacidade do IPv6 
 netsh interface ipv6 set privacy state=disabled
