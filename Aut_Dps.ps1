@@ -15,4 +15,4 @@ Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' 
 Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
 
 # Saída para indicar a conclusão 
-Write-Host "A privacidade do IPv6 foi desativada e o Remote Desktop foi habilitado com sucesso." 
+Write-Host "A privacidade do IPv6 foi desativada e o Remote Desktop foi habilitado com sucesso."
