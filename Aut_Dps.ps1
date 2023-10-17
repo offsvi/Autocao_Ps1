@@ -7,7 +7,7 @@ if (-not $isAdmin) {
     exit
 }
 
-# Desativa a privacidade do IPv6
+# Desativa a privacidade do IPv6 
 netsh interface ipv6 set privacy state=disabled
 
 # Habilita o Remote Desktop
