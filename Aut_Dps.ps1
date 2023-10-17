@@ -14,5 +14,5 @@ netsh interface ipv6 set privacy state=disabled
 Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -Name "fDenyTSConnections" -Value 0
 Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
 
-# Saída para indicar a conclusão
+# Saída para indicar a conclusão 
 Write-Host "A privacidade do IPv6 foi desativada e o Remote Desktop foi habilitado com sucesso."
